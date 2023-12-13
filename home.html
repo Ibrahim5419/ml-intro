@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Navigation bar</title>
+  </head>
+  <script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    }
+  </script>
+  <body>
+    <header>
+      <div id="brand"><a href="/">ML-Intro</a></div>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-content">
+      <h1>What is Machine Learning?</h1>
+      <p>Machine learning is an application of artificial intelligence (AI)
+         that provides systems the ability to automatically learn and 
+         improve from experience without being explicitly programmed.</p>
+        </div>
+    </div>
+    <div class="honeycomb">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+      <section class="category1">
+          <div class="category1-text">
+              <h1>Supervised learning</h1>
+              <p>Supervised learning, also known as supervised machine learning,
+                  is a subcategory of machine learning and artificial intelligence.
+                  It is defined by its use of labeled datasets to train algorithms
+                  that to classify data or predict outcomes accurately.
+                  As input data is fed into the model, it adjusts its weights until
+                  the model has been fitted appropriately, which occurs as part of the cross
+                  validation process. Supervised learning helps organizations
+                  solve for a variety of real-world problems at scale,
+                  such as classifying spam in a separate folder from your inbox.
+              </p>
+          </div>
+          <div class="category1-img"><img src="super.jpeg" alt="Supervised Learning Image"></div>
+      </section>
+      <section class="category2">
+        <div class="category2-img"><img src="Unsupervised.jpeg"></div>
+        <div class="category2-text">
+          <h1>Unsupervised learning</h1>
+          <p>Unsupervised learning, also known as unsupervised machine learning,
+             uses machine learning algorithms to analyze and cluster unlabeled datasets.
+              These algorithms discover hidden patterns or data groupings without the need
+               for human intervention.
+            Its ability to discover similarities and differences in 
+            information make it the ideal solution for exploratory data analysis, 
+            cross-selling strategies, customer segmentation, and image recognition.</p>
+        </div>
+      </section>
+      <section class="category3">
+        <div class="category3-text">
+          <h1>Semi-Supervised learning</h1>
+          <p>Semi-Supervised learning is a type of Machine Learning algorithm
+             that represents the intermediate ground between Supervised and
+              Unsupervised learning algorithms. It uses the combination of labeled
+               and unlabeled datasets during the training period.
+          </p>
+        </div>
+        <div class="category3-img"><img src="semisupervised.jpeg"></div>
+      </section>
+    <footer>
+        <p>&copy; 2023 ML-Intro | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
